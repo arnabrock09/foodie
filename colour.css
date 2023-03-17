@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin: 0;
+    font-family: Montserrat;
+    
+}
+
+
+
+/*------ Login Section ------*/
+
+.login-left{
+
+    text-align: justify;
+    padding-top:30%;
+    text-align:center;
+    background-color:#fff;
+    height:70vh;
+    width:100%;
+}
+
+.login-right{
+    
+    text-align: justify;
+    padding-top:3%;
+    flex-direction:column;
+    justify-content:center;
+    background-color:#de080f;
+    height:70vh;
+    width:100%;
+}
+
+.book{
+    font-size:20px;
+}
+
+.log{
+    text-align: center;
+    font-size:20px;
+    color:#fff;
+}
+
+.form-item,.login-form-footer{
+    text-align: center;
+    font-size:medium;    
+}
+
+.field{
+    padding-left:50px;
+    text-align:left;
+    padding-bottom:10px;
+    padding-top:20px;
+}
+
+.login-form-content{
+    font-size:15px;
+    padding-left:50px;
+    padding-right:50px;
+    color:#fff;
+    font-weight:500;
+}
+
+.login-form-footer a {
+    padding: 10px;
+    border-radius:30px;
+    margin:10px;
+    
+    text-align: center;
+    line-height: 60px; 
+    
+    color:#fff;
+    font-weight:500;
+    font-size:12px;
+    align-content:center;
+}
+
+.login-form-footer a img {
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right:5px;
+}
+
+.login-form-footer a {
+    background-color: #fff;
+    color: #111;
+    text-decoration:none;
+}
+
+.input{
+    height:40px;
+    width:80%;
+    border: none;
+    outline:none;
+    border-radius:30px;
+    text-align:center;
+    font-family: Montserrat;
+    font-weight:bold;
+    background-color:#de080f;
+    color:#fff;
+    border: 2px solid #ccc;
+}
+
+::placeholder{
+    color:#fff;
+    opacity:.5;
+}
+
+.button{
+    height:40px;
+    width:50%;
+    border: 2px solid;
+    outline:none;
+    border-radius:30px;
+    text-align:center;
+    font-family: Montserrat;
+    font-weight:bold;
+    background-color:#fff;
+    color:#de080f;
+    
+}
+
+button:hover{
+    background-color:#de080f;
+    transition: 0ms;
+    border:2px solid #fff;
+    color: #fff;
+}
+
+.rem{
+    width:15px;
+    height:15px;
+    vertical-align: middle;
+    margin-bottom: 7px;
+    margin-right:5px;
+
+}
+
+/*------ Team Section ------*/
+
+
+
+
+/*------Responsive Web------*/
+
+@media(min-width:600px){
+    
+    .container{
+        display:flex; 
+    }
+
+    .login-left,.login-right{
+        height:100vh;
+        width:100%;
+    }
+    .par{
+        font-size:20px;
+    }
+    .login-form-footer{
+        font-size:15px;
+    }
+   .book,.log{
+        font-size:30px;       
+    }
+
+    .login-left{
+        padding-top:15%;
+        font-weight:900;
+    }
+
+    .login-right{
+        padding-top:8%;
+        font-weight:900;
+    }
+
+    .field{
+        padding-left:100px;
+        text-align:left;
+        padding-bottom:10px;
+        padding-top:20px;
+    }
+}
