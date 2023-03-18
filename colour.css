@@ -11,14 +11,29 @@ body{
     
 }
 
+.container{
+    border:none;
+    margin:none;
+}
 
+#p{
+    font-size: 35px;
+    font-weight:bold;
+}
+
+#tt{
+    text-align:center;
+    font-size:18px;
+    color:#ffffff;
+    font-weight:700;
+}
 
 /*------ Login Section ------*/
 
 .login-left{
 
     text-align: justify;
-    padding-top:50%;
+    padding-top: 35%;
     text-align:center;
     background-color:#ffffff;
     height:100vh;
@@ -28,7 +43,7 @@ body{
 .login-right{
     
     text-align: justify;
-    padding-top:20%;
+    padding-top:10%;
     flex-direction:column;
     justify-content:center;
     background-color:#de080f;
@@ -48,7 +63,7 @@ body{
 
 .form-item,.login-form-footer{
     text-align: center;
-    font-size:medium;    
+    font-size:medium;
 }
 
 
@@ -72,6 +87,7 @@ body{
     font-weight:500;
     font-size:12px;
     align-content:center;
+    
 }
 
 .login-form-footer a img {
@@ -81,6 +97,7 @@ body{
 }
 
 .login-form-footer a {
+    
     background-color: #ffffff;
     color: #111;
     text-decoration:none;
@@ -139,10 +156,85 @@ button:hover{
     vertical-align: middle;
     margin-bottom: 7px;
     margin-right:5px;
-
 }
 
 /*------ Team Section ------*/
+
+.tag{
+    padding-top:1%;
+    border:none;
+    justify-content:center;
+    text-align:center;
+    margin: 0 30px 0;
+    color:#ffffff;
+}
+
+.team{
+    background-color:#064635;
+    height:100vh;
+    width:100%;
+}
+
+#name{
+    font-size: 15px;
+}
+
+#arnab,#sourav{
+    width:100px;
+}
+#sahil,#subham{
+    width:100px;
+}
+#subhra,#soumyajit{
+    width:100px;
+}
+
+.list{
+    background-color:#ffffff;
+}
+.team-left{
+    display:flex;
+    justify-content:center;
+    padding-bottom:10px;
+    background-color:#064635;
+}
+
+.team-right{
+    margin:30px;
+    text-align:justify;
+    justify-content:center;
+    background-color:#ffffff;
+    padding-bottom:10px;
+}
+
+.box{
+    width:max-content;
+    text-align:center;
+    padding-bottom: 5px;
+    background-color:#064635;
+    margin:30px 20px 30px;
+    border:2px solid #ffffff;
+}
+
+
+#name{
+    color:#ffffff;
+}
+
+#msg{
+    
+    font-size:40px;
+    text-align:center;
+    color:#064635;
+}
+
+#tp{
+    line-height:1.5;
+    font-size:16px;
+    color:#064635;
+    font-weight:500;
+}
+
 
 
 
@@ -151,6 +243,15 @@ button:hover{
 
 @media(min-width:600px){
     
+
+    #p{
+        font-size: 40px;
+        font-weight:bold;
+    }
+    
+
+    /*------Login Section------*/
+
     .container{
         display:flex; 
     }
@@ -190,4 +291,102 @@ button:hover{
     .input{
         font-size:16px;
     }
+
+    /*------Team Section------*/
+
+    #arnab,#sourav{
+        width:200px;
+    }
+    #sahil,#subham{
+        width:200px;
+    }
+    #subhra,#soumyajit{
+        width:200px;
+    }
+
+    .list{
+        background-color:#064635;    
+        width:100%;
+        display:flex;
+    }
+    
+    .up,.down{
+        padding-top:15px;
+        justify-content:center;
+        width:100%;
+        display:flex;
+    }
+    
+    .team-left{
+        margin:40px;
+        width:50%;
+        text-align:center;
+        border-radius:10px;
+        border:3px solid#ffffff;
+        margin-bottom:0px;
+        display:block;
+        background-color:#ffffff;
+        justify-content:center;
+        padding-bottom:10px;
+    }
+
+    .team-right{
+        background-color:#064635; 
+        padding-top:30px;
+        margin:0px;
+        padding:0px;
+        width:50%;
+    }
+
+    .box{
+        width:max-content;
+        height:280px;
+        text-align:center;
+        padding-bottom: 5px;
+        background-color:#519259;
+        margin:10px 20px 10px;
+        border-radius: 10px;
+        border:3px solid #ffffff;
+    }
+
+    .box img{
+        border-radius:5px 5px 0 0;
+    }
+
+    #name{
+        padding-top:10px;
+        font-size: 20px;
+        text-align:center;
+        margin: 0 0px 0;
+        color:#ffffff;
+    }
+
+    #msg{
+        margin-top:80px;
+        padding-bottom:5px;
+        padding-right:70px;
+        font-size: 40px;
+        text-align:center;
+        color:#ffffff;
+    }
+
+    #tp{
+        line-height: 2;
+        font-size:16px;
+        text-align:justify;
+        margin:0px 100px 50px 50px; 
+        color:#ffffff;
+        font-weight:400;
+    }
+
+    #tc{
+        text-align:center;
+        font-size:18px;
+        color:#ffffff;
+        font-weight:700;
+    }
+
 }
+
+
+
