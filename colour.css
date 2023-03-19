@@ -127,7 +127,7 @@ body{
     opacity:.5;
 }
 
-.button{
+.but{
     height:40px;
     width:50%;
     border: 2px solid;
@@ -141,7 +141,7 @@ body{
     
 }
 
-button:hover{
+.but:hover{
     background-color:#de080f;
     transition: 0ms;
     border:2px solid #ffffff;
@@ -269,6 +269,7 @@ button:hover{
     .login-form-footer{
         font-size:15px;
     }
+
    .book,.log{
         font-size:30px;       
     }
@@ -276,11 +277,13 @@ button:hover{
     .login-left{
         padding-top:15%;
         font-weight:900;
+        padding-bottom:0%;
     }
 
     .login-right{
         padding-top:8%;
         font-weight:900;
+        padding-bottom:0%;
     }
 
     .field{
