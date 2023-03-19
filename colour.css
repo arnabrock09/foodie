@@ -179,12 +179,16 @@ body{
 
 #arnab,#sourav{
     width:100px;
+    height:100px;
+
 }
 #sahil,#subham{
     width:100px;
+    height:100px;
 }
 #subhra,#soumyajit{
     width:100px;
+    height:100px;
 }
 
 .team-left{
@@ -302,12 +306,15 @@ body{
 
     #arnab,#sourav{
         width:200px;
+        height:200px;
     }
     #sahil,#subham{
         width:200px;
+        height:200px;
     }
     #subhra,#soumyajit{
         width:200px;
+        height:200px;
     }
 
     .tag{
