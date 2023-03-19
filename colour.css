@@ -1,162 +1,410 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="colour.css">
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-    <title>Foodie</title>
-</head>
-<body>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;700;900&display=swap');
 
-    <!----------Login Section---------->
-    <section class="login" id="login">
-        
-            <div class="container">
+* {
+    box-sizing: border-box;
+}
 
-                <div class="login-left">
+body{
+    padding:0;
+    margin: 0;
+    font-family: Montserrat;
+    
+}
 
-                    <div class="book">
-                        <img src="img/booking.png" alt="booking" width="200" height="200">
-                        <h1 id="p">Your Order <br>Our Responsibility</h1>
-                    </div>
+.container{
+    border:none;
+    margin:none;
+}
 
-                </div>
-                
-                <div class="login-right">
+#p{
+    font-size: 35px;
+    font-weight:bold;
+}
 
-                    <div class="login-header">
-                        <div class="log">
-                            <h1 id="p">Login to Us</h1>
-                        </div>
-                    </div>
-                    <form class="login-form">
-                        <div class="login-form-content">
-                            <div class="par"><p id="tt">To Help us find your details for your preferred dishes, date and time of your food.</p>
+#tt{
+    text-align:center;
+    font-size:18px;
+    color:#ffffff;
+    font-weight:700;
+}
 
-                            <div class="form-item">
-                                <div class="field">
-                                    <label for="email">Enter Username</label><br>
-                                </div>
-                                <input type="text" class="input" placeholder="Username" required>
-                            </div>
-                            <div class="form-item">
-                                <div class="field">
-                                    <label for="password">Enter Password</label><br>
-                                </div>
-                                <input type="password" class="input" placeholder="Password" required>
-                            </div>
-                        </div>
-                            <div class="form-item" >
-                                <br><button type="submit" class="but">Login</button>
+/*------ Login Section ------*/
 
-                                <div class="checkbox">
-                                    <br><input type="checkbox" class="rem"><label for="rememberMeCheckbox">Remember me</label>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <br>
-                        <div class="login-form-footer">
-                            <a href="#">
-                                <img width="26" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="">Facebook Login
-                            </a>
-                            <a href="#">
-                                <img width="30" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt="">Google Login
-                            </a>
-                        </div>
-                    </form>
+.login-left{
 
-                </div>
-            </div>
-    </section>
+    text-align: justify;
+    text-align:center;
+    background-color:#ffffff;
+    padding-top: 45%;
+    padding-bottom: 45%;
+}
 
-    <!----------Team Section---------->
-    <section class="team" >
-            <div class="tag">
-                <h1 id="p">The Team </h1>
-                <p id="tc">We want to see the world more fair and transparent. We are building the missing puzzles in order to see our vision come true.</p>
-            </div>
-            
-            <div class="list">
-                <div class="team-left">
-                    <div class="up">
-                        <div class="box">
+.login-right{
+    text-align: justify;
+    flex-direction:column;
+    justify-content:center;
+    background-color:#de080f;
+    padding-top:25%;
+    padding-bottom:25%;
+    
+}
 
-                            
-                                <img width="300" src="img/arnab.jpeg" alt="arnab" id="arnab">
-                                <h2 id="name">Arnab<br>Dutta</h2>
-                            
+.book{
+    font-size:20px;
+}
 
-                        </div>
-                        
-                        <div class="box">
+.log{
+    text-align: center;
+    font-size:20px;
+    color:#ffffff;
+}
 
-                            
-                                <img width="300" src="img/sourav.jpg" alt="sourav" id="sourav">   
-                                <h2 id="name">Sourav<br>Mukherjee</h2>
-                            
+.form-item,.login-form-footer{
+    text-align: center;
+    font-size:medium;
+}
 
-                        </div>
-                        
-                        <div class="box">
 
-                            
-                                <img width="300" src="img/sahil.jpg" alt="sahil" id="sahil">
-                                <h2 id="name">Sahil<br>Poddar</h2>
-                            
+.login-form-content{
+    font-size:15px;
+    padding-left:50px;
+    padding-right:50px;
+    color:#ffffff;
+    font-weight:500;
+}
 
-                        </div>  
+.login-form-footer a {
+    padding: 10px;
+    border-radius:30px;
+    margin:10px;
+    
+    text-align: center;
+    line-height: 60px; 
+    
+    color:#ffffff;
+    font-weight:500;
+    font-size:12px;
+    align-content:center;
+    
+}
 
-                    </div>
+.login-form-footer a img {
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right:5px;
+}
 
-                    <div class="down">
-                        
-                        <div class="box">
+.login-form-footer a {
+    
+    background-color: #ffffff;
+    color: #111;
+    text-decoration:none;
+}
 
-                            
-                                <img width="300" src="img/subham.jpg" alt="subham" id="subham">
-                                <h2 id="name">Subham<br>Satra</h2>
-                            
+.field{
+    padding-left:35px;
+    text-align:left;
+    padding-bottom:10px;
+    padding-top:20px;
+}
 
-                        </div>
-                        
-                        <div class="box">
+.input{
+    height:40px;
+    width:90%;
+    border: none;
+    outline:none;
+    border-radius:30px;
+    text-align:center;
+    font-family: Montserrat;
+    font-weight:bold;
+    background-color:#de080f;
+    color:#ffffff;
+    border: 2px solid #ccc;
+}
 
-                            
-                                <img width="300" src="img/subhra.jpg" alt="subhra" id="subhra">
-                                <h2 id="name">Subhra<br>Mandal</h2>
-                            
+::placeholder{
+    color:#ffffff;
+    opacity:.5;
+}
 
-                        </div>
-                        
-                        <div class="box">
-                            
-                                <img width="300" src="img/soumyajit.jpg" alt="somyajit" id="soumyajit">
-                                <h2 id="name">Soumyajit<br>Mukherjee</h2>
-                            
-                        </div>
+.but{
+    height:40px;
+    width:50%;
+    border: 2px solid;
+    outline:none;
+    border-radius:30px;
+    text-align:center;
+    font-family: Montserrat;
+    font-weight:bold;
+    background-color:#ffffff;
+    color:#de080f;
+    
+}
 
-                    </div>
+.but:hover{
+    background-color:#de080f;
+    transition: 0ms;
+    border:2px solid #ffffff;
+    color: #ffffff;
+}
 
-                </div>
+.rem{
+    width:15px;
+    height:15px;
+    vertical-align: middle;
+    margin-bottom: 7px;
+    margin-right:5px;
+}
 
-                <div class="team-right">
+/*------ Team Section ------*/
 
-                    <div class="team-vision">
+.tag{
+    padding-top:10%;
+    border:none;
+    justify-content:center;
+    text-align:center;
+    margin: 0 30px 0;
+    color:#ffffff;
+}
 
-                        <h1 id="msg">Team Vision</h1>
+.team{
+    background-color:#064635;
+    height:100vh;
+    width:100%;
+}
 
-                        <p id="tp">The Foodie project team comprises six enthusiastic last-year college students who share a passion for building a web application that simplifies the process of purchasing food ticket online. Led by <b>Arnab Dutta</b>, the team members include <b>Sourav Mukherjee</b>, <b>Soumyajit Mukherjee</b>, <b>Sahil Poddar</b>, <b>Subham Santra</b>, and <b>Subhra Mondal</b>. While they may be relatively new to the industry and lack prior experience, they have a strong foundation in several essential programming languages such as HTML, CSS, JavaScript, PHP, and DBMS. The team is eager to leverage their knowledge and apply their skills to create something innovative that can make an impact in the food industry.
-                        </p>
+#name{
+    font-size: 15px;
+}
 
-                    </div>
+#arnab,#sourav{
+    width:130px;
+    height:130px;
 
-                </div>
+}
+#sahil,#subham{
+    width:130px;
+    height:130px;
+}
+#subhra,#soumyajit{
+    width:130px;
+    height:130px;
+}
 
-            </div>
-    </section>
+.team-left{
+    display:flex;
+    justify-content:center;
+    background-color:#064635;
 
-</body>
-</html>
+    padding-top:0%;
+    padding-bottom:20%;
+}
+
+.team-right{
+    padding-top:1%;
+    margin:30px;
+    text-align:justify;
+    justify-content:center;
+    background-color:#ffffff;
+    padding-bottom:10%;
+}
+
+.team-vision{
+    padding-top:7%;
+    padding-bottom:10%;
+}
+
+.box{
+    width:max-content;
+    text-align:center;
+    padding-bottom: 5px;
+    background-color:#064635;
+    margin:30px 20px 30px;
+    border:2px solid #ffffff;
+}
+
+
+#name{
+    color:#ffffff;
+}
+
+#msg{
+    
+    font-size:35px;
+    text-align:center;
+    color:#064635;
+}
+
+#tp{
+    line-height:1.5;
+    font-size:16px;
+    color:#064635;
+    font-weight:500;
+}
+
+
+
+
+
+/*------Responsive Web------*/
+
+@media(min-width:1000px){
+    
+
+    #p{
+        font-size: 40px;
+        font-weight:bold;
+    }
+    
+
+    /*------Login Section------*/
+
+    .container{
+        display:flex; 
+    }
+
+    .login-left,.login-right{
+        height:100vh;
+        width:100%;
+    }
+    .par{
+        font-size:20px;
+    }
+    .login-form-footer{
+        font-size:15px;
+    }
+
+   .book,.log{
+        font-size:30px;       
+    }
+
+    .login-left{
+        padding-top:15%;
+        font-weight:900;
+        padding-bottom:0%;
+    }
+
+    .login-right{
+        padding-top:8%;
+        font-weight:900;
+        padding-bottom:0%;
+    }
+
+    .field{
+        padding-left:100px;
+        text-align:left;
+        padding-bottom:10px;
+        padding-top:20px;
+        font-size:18px;
+    }
+
+    .input{
+        font-size:16px;
+    }
+
+    /*------Team Section------*/
+
+    #arnab,#sourav{
+        width:170px;
+        height:170px;
+    }
+    #sahil,#subham{
+        width:170px;
+        height:170px;
+    }
+    #subhra,#soumyajit{
+        width:170px;
+        height:170px;
+    }
+
+    .tag{
+        padding-top:0.01%;
+    }
+
+    .list{
+        background-color:#064635;    
+        width:100%;
+        display:flex;
+    }
+    
+    .up,.down{
+        padding-top:15px;
+        justify-content:center;
+        width:100%;
+        display:flex;
+    }
+    
+    .team-left{
+        margin:40px;
+        width:50%;
+        text-align:center;
+        border-radius:10px;
+        border:3px solid#ffffff;
+        margin-bottom:0px;
+        display:block;
+        background-color:#ffffff;
+        justify-content:center;
+        padding-bottom:10px;
+    }
+
+    .team-right{
+        background-color:#064635; 
+        padding-top:40px;
+        margin:0px;
+        padding:0px;
+        width:50%;
+    }
+
+    .team-vision{
+        padding-top:5%;
+    }
+
+    .box{
+        width:max-content;
+        height:280px;
+        text-align:center;
+        padding-bottom: 5px;
+        background-color:#519259;
+        margin:10px 20px 10px;
+        border-radius: 10px;
+        border:3px solid #ffffff;
+    }
+
+    .box img{
+        border-radius:5px 5px 0 0;
+    }
+
+    #name{
+        padding-top:10px;
+        font-size: 20px;
+        text-align:center;
+        margin: 0 0px 0;
+        color:#ffffff;
+    }
+
+    #msg{
+        margin-top:80px;
+        padding-bottom:5px;
+        padding-right:70px;
+        font-size: 40px;
+        text-align:center;
+        color:#ffffff;
+    }
+
+    #tp{
+        line-height: 2;
+        font-size:16px;
+        text-align:justify;
+        margin:0px 100px 50px 50px; 
+        color:#ffffff;
+        font-weight:400;
+    }
+
+    #tc{
+        text-align:center;
+        font-size:18px;
+        color:#ffffff;
+        font-weight:700;
+    }
+
+}
