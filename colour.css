@@ -302,6 +302,10 @@ button:hover{
         width:200px;
     }
 
+    .tag{
+        padding-top:0.01%;
+    }
+
     .list{
         background-color:#064635;    
         width:100%;
