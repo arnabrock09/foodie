@@ -57,17 +57,33 @@ $(document).ready(function(){
     });
 });
 
+
 $(document).ready(function() {
     // Toggle to the signup form
-    $("#signupButton").click(function() {
-        $(".signup-form").hide();
-        $(".login-form").show();
-  
-    });
 
     // Toggle back to the login form
     $("#loginButton").click(function() {
       $(".login-form").hide();
       $(".signup-form").show();
+    });
+  });
+
+
+  
+$(document).ready(function() {
+    // Toggle to the signup form
+
+    // Toggle back to the login form
+    $("#signup").click(function() {
+        window.location.href = "../MainPage/main.html";
+    });
+  });
+
+  $(document).ready(function() {
+    // Toggle to the signup form
+
+    // Toggle back to the login form
+    $("#signin").click(function() {
+        window.location.href = "../MainPage/main.html";
     });
   });
